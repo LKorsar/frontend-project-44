@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import { welcome } from '../src/index.js';
 
 const getRandomInt = (min, max) => {
   min = Math.ceil(min);
@@ -11,7 +10,7 @@ const getRandomInt = (min, max) => {
 const progressionGame = () => {
   /* eslint-disable no-console */
   console.log('brain-progression');
-  welcome();
+  console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log('What number is missing in the progression?');
