@@ -1,9 +1,8 @@
-/* eslint-disable import/extensions */
 import commonGameLogic from '../index.js';
 import getRandomInt from '../randomInt.js';
-/* eslint-enable import/extensions */
 
 const progressionGame = () => {
+  console.log('brain-progression');
   const progressionGameRules = 'What number is missing in the progression?';
 
   const progressionGameAlgorithm = () => {
