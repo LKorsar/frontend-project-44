@@ -1,7 +1,5 @@
-/* eslint-disable import/extensions */
 import commonGameLogic from '../index.js';
 import getRandomInt from '../randomInt.js';
-/* eslint-enable import/extensions */
 
 const getRandomOperator = () => {
   const operators = ['+', '-', '*'];
@@ -10,6 +8,7 @@ const getRandomOperator = () => {
 };
 
 const calcGame = () => {
+  console.log('brain-calc');
   const calcGameRules = 'What is the result of the expression?';
 
   const calcGameAlgorithm = () => {
