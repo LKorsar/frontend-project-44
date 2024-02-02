@@ -1,9 +1,8 @@
-/* eslint-disable import/extensions */
 import commonGameLogic from '../index.js';
 import getRandomInt from '../randomInt.js';
-/* eslint-enable import/extensions */
 
 const primeGame = () => {
+  console.log('brain-prime');
   const primeGameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
   const primeGameAlgorithm = () => {
@@ -19,10 +18,11 @@ const primeGame = () => {
         arr.push(divisor);
       }
     }
-    /* eslint-disable no-unused-expressions */
-    (arr.length === 2) ? correctAnswer = 'yes' : correctAnswer = 'no';
-    /* eslint-enable no-unused-expressions */
-
+    if (arr.length === 2) {
+      correctAnswer = 'yes';
+    } else {
+      correctAnswer = 'no';
+    }
     return [gameQuestion, correctAnswer];
   };
   commonGameLogic(primeGameRules, primeGameAlgorithm);
