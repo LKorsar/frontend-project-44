@@ -1,9 +1,8 @@
-/* eslint-disable import/extensions */
 import commonGameLogic from '../index.js';
 import getRandomInt from '../randomInt.js';
-/* eslint-enable import/extensions */
 
 const gcdGame = () => {
+  console.log('brain-gcd');
   const gcdGameRules = 'Find the greatest common divisor of given numbers.';
 
   const gcdGameAlgorithm = () => {
