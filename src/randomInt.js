@@ -1,9 +1,6 @@
 const getRandomInt = (min, max) => {
-  /* eslint-disable no-param-reassign */
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  /* eslint-enable no-param-reassign */
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  const raInt = Math.floor(Math.random() * (Math.floor(max) - Math.ceil(min) + 1)) + Math.ceil(min);
+  return raInt;
 };
 
 export default getRandomInt;

@@ -1,8 +1,8 @@
 import readlineSync from 'readline-sync';
 
 export default () => {
+  console.log('brain-games');
+  console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
-  /* eslint-disable no-console */
   console.log(`Hello, ${userName}!`);
-  /* eslint-enable no-console */
 };
