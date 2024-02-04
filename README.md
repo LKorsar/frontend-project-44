@@ -40,5 +40,3 @@ make prime
 ```
 
 The demonstration of gameplay is posted by link: [gameplay on asciinema](https://asciinema.org/a/if6o4tmVgpslts5maQlZmbgsS)
-
-![brain-image](https://ru.freepik.com/free-vector/hand-drawn-human-brain_2782979.htm#query=%D0%BC%D0%BE%D0%B7%D0%B3&position=4&from_view=keyword&track=sph&uuid=e6a91f96-0dff-4e4c-bd5d-9a8eddd0d887)
