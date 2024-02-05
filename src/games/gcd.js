@@ -1,8 +1,7 @@
-import commonGameLogic from '../index.js';
+import getCommonGameLogic from '../index.js';
 import getRandomInt from '../randomInt.js';
 
-const gcdGame = () => {
-  console.log('brain-gcd');
+const getGcdGame = () => {
   const gcdGameRules = 'Find the greatest common divisor of given numbers.';
 
   const gcdGameAlgorithm = () => {
@@ -21,7 +20,7 @@ const gcdGame = () => {
 
     return [gameQuestion, correctAnswer];
   };
-  commonGameLogic(gcdGameRules, gcdGameAlgorithm);
+  getCommonGameLogic(gcdGameRules, gcdGameAlgorithm);
 };
 
-export default gcdGame;
+export default getGcdGame;
