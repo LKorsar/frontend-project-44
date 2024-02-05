@@ -1,8 +1,7 @@
-import commonGameLogic from '../index.js';
+import getCommonGameLogic from '../index.js';
 import getRandomInt from '../randomInt.js';
 
-const evenGame = () => {
-  console.log('brain-even');
+const getEvenGame = () => {
   const evenGameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
   const evenGameAlgorithm = () => {
@@ -16,7 +15,7 @@ const evenGame = () => {
     }
     return [gameQuestion, correctAnswer];
   };
-  commonGameLogic(evenGameRules, evenGameAlgorithm);
+  getCommonGameLogic(evenGameRules, evenGameAlgorithm);
 };
 
-export default evenGame;
+export default getEvenGame;
