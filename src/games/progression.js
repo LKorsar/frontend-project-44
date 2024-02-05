@@ -1,8 +1,7 @@
-import commonGameLogic from '../index.js';
+import getCommonGameLogic from '../index.js';
 import getRandomInt from '../randomInt.js';
 
-const progressionGame = () => {
-  console.log('brain-progression');
+const getProgressionGame = () => {
   const progressionGameRules = 'What number is missing in the progression?';
 
   const progressionGameAlgorithm = () => {
@@ -20,7 +19,7 @@ const progressionGame = () => {
 
     return [gameQuestion, correctAnswer];
   };
-  commonGameLogic(progressionGameRules, progressionGameAlgorithm);
+  getCommonGameLogic(progressionGameRules, progressionGameAlgorithm);
 };
 
-export default progressionGame;
+export default getProgressionGame;
