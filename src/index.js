@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const commonGameLogic = (gameRules, gameAlgorithm) => {
+const getCommonGameLogic = (gameRules, gameAlgorithm) => {
   console.log('Welcome to the Brain Games!');
 
   const userName = readlineSync.question('May I have your name? ');
@@ -8,7 +8,8 @@ const commonGameLogic = (gameRules, gameAlgorithm) => {
 
   console.log(gameRules);
 
-  for (let gameRounds = 1; gameRounds <= 3; gameRounds += 1) {
+  const gameRoundsCount = 3;
+  for (let i = 0; i < gameRoundsCount; i += 1) {
     const inputData = gameAlgorithm();
     const gameQuestion = inputData[0];
 
@@ -27,4 +28,4 @@ const commonGameLogic = (gameRules, gameAlgorithm) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export default commonGameLogic;
+export default getCommonGameLogic;

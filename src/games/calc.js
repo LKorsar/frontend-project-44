@@ -20,17 +20,17 @@ const getCalcGame = () => {
     let correctAnswer;
 
     switch (operator) {
-      case '+': 
+      case '+':
         correctAnswer = (number1 + number2).toString();
         break;
       case '-':
         correctAnswer = (number1 - number2).toString();
         break;
-      case '*':  
+      case '*':
         correctAnswer = (number1 * number2).toString();
         break;
-        default:
-      correctAnswer = null;
+      default:
+        correctAnswer = null;
     }
 
     return [gameQuestion, correctAnswer];
