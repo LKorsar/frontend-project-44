@@ -1,4 +1,4 @@
-import commonGameLogic from '../index.js';
+import getCommonGameLogic from '../index.js';
 import getRandomInt from '../randomInt.js';
 
 const getRandomOperator = () => {
@@ -7,8 +7,7 @@ const getRandomOperator = () => {
   return operators[randomIndex];
 };
 
-const calcGame = () => {
-  console.log('brain-calc');
+const getCalcGame = () => {
   const calcGameRules = 'What is the result of the expression?';
 
   const calcGameAlgorithm = () => {
@@ -20,17 +19,23 @@ const calcGame = () => {
 
     let correctAnswer;
 
-    if (operator === '+') {
-      correctAnswer = (number1 + number2).toString();
-    } else if (operator === '-') {
-      correctAnswer = (number1 - number2).toString();
-    } else {
-      correctAnswer = (number1 * number2).toString();
+    switch (operator) {
+      case '+': 
+        correctAnswer = (number1 + number2).toString();
+        break;
+      case '-':
+        correctAnswer = (number1 - number2).toString();
+        break;
+      case '*':  
+        correctAnswer = (number1 * number2).toString();
+        break;
+        default:
+      correctAnswer = null;
     }
 
     return [gameQuestion, correctAnswer];
   };
-  commonGameLogic(calcGameRules, calcGameAlgorithm);
+  getCommonGameLogic(calcGameRules, calcGameAlgorithm);
 };
 
-export default calcGame;
+export default getCalcGame;
